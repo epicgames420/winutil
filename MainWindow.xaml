@@ -39,6 +39,7 @@
 
 							<Label Content="Communications" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installdiscord" Content="Discord" Margin="5,0"/>
+							<CheckBox Name="Installtelegram" Content="Telegram" Margin="5,0"/>
 							<CheckBox Name="Installhexchat" Content="Hexchat" Margin="5,0"/>
 							<CheckBox Name="Installmatrix" Content="Matrix" Margin="5,0"/>
 							<CheckBox Name="Installsignal" Content="Signal" Margin="5,0"/>
