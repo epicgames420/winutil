@@ -77,6 +77,7 @@
 
 							<Label Content="Games" FontSize="16" Margin="5,0"/>
 							<CheckBox Name="Installepicgames" Content="Epic Games Launcher" Margin="5,0"/>
+							<CheckBox Name="Installheroic" Content="Heroic Games Launcher (Epic Alternative) Margin="5,0"/>
 							<CheckBox Name="Installgog" Content="GOG Galaxy" Margin="5,0"/>
 							<CheckBox Name="Installsteam" Content="Steam" Margin="5,0"/>
 
@@ -96,6 +97,7 @@
 							<CheckBox Name="Installgimp" Content="GIMP (Image Editor)" Margin="5,0"/>
 							<CheckBox Name="Installgreenshot" Content="Greenshot (Screenshots)" Margin="5,0"/>
 							<CheckBox Name="Installhandbrake" Content="HandBrake" Margin="5,0"/>
+							<CheckBox Name="Installmakemkv" Content="MakeMKV (DVD ripping)" Margin="5,0"/>
 							<CheckBox Name="Installimageglass" Content="ImageGlass (Image Viewer)" Margin="5,0"/>
 							<CheckBox Name="Installinkscape" Content="Inkscape" Margin="5,0"/>
 							<CheckBox Name="Installmpc" Content="Media Player Classic (Video Player)" Margin="5,0"/>

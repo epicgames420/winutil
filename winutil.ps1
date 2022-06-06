@@ -5,8 +5,8 @@
     Version 0.0.1
 #>
 
-# $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
-$inputXML = (new-object Net.WebClient).DownloadString("https://github.com/epicgames420/winutil/raw/main/MainWindow.xaml") #uncomment for Production
+ $inputXML = Get-Content "MainWindow.xaml" #uncomment for development
+# $inputXML = (new-object Net.WebClient).DownloadString("https://github.com/epicgames420/winutil/raw/main/MainWindow.xaml") #uncomment for Production
 
 $inputXML = $inputXML -replace 'mc:Ignorable="d"','' -replace "x:N",'N' -replace '^<Win.*', '<Window'
 [void][System.Reflection.Assembly]::LoadWithPartialName('presentationframework')
@@ -248,7 +248,11 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallepicgames.IsChecked -eq $true ) { 
         $wingetinstall.Add("EpicGames.EpicGamesLauncher")
         $WPFInstallepicgames.IsChecked = $false
-    }                                      
+    }           
+	If ( $WPFInstallheroic.IsChecked -eq $true ) { 
+        $wingetinstall.Add("HeroicGamesLauncher.HeroicGamesLauncher")
+        $WPFInstallheroic.IsChecked = $false
+    }  	
     If ( $WPFInstallflameshot.IsChecked -eq $true ) { 
         $wingetinstall.Add("Flameshot.Flameshot")
         $WPFInstallflameshot.IsChecked = $false
@@ -272,6 +276,10 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallhandbrake.IsChecked -eq $true ) { 
         $wingetinstall.Add("HandBrake.HandBrake")
         $WPFInstallhandbrake.IsChecked = $false
+    }     
+	If ( $WPFInstallmakemkv.IsChecked -eq $true ) { 
+        $wingetinstall.Add("GuinpinSoft.MakeMKV")
+        $WPFInstallmakemkv.IsChecked = $false
     }      
     If ( $WPFInstallhexchat.IsChecked -eq $true ) { 
         $wingetinstall.Add("HexChat.HexChat")
