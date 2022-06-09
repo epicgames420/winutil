@@ -305,6 +305,10 @@ $WPFinstall.Add_Click({
     If ( $WPFInstallmalwarebytes.IsChecked -eq $true ) { 
         $wingetinstall.Add("Malwarebytes.Malwarebytes")
         $WPFInstallmalwarebytes.IsChecked = $false
+    }             
+	If ( $WPFInstallteamspeak.IsChecked -eq $true ) { 
+        $wingetinstall.Add("TeamSpeakSystems.TeamSpeakClient")
+        $WPFInstallteamspeak.IsChecked = $false
     }          
     If ( $WPFInstallmatrix.IsChecked -eq $true ) { 
         $wingetinstall.Add("Element.Element")
